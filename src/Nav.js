@@ -1,23 +1,20 @@
 import React from "react";
-import { Link, NavLink, useHistory } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 
 export default function Nav() {
-
-
-    return (
-        <div className="nav-bar">
-            <NavLink to="/" >
-                Tyler Jacobson
-            </NavLink>
-            <div className="nav-links">
-                <NavLink to="/">
-                    Home
-                </NavLink>
-                <NavLink to="/contact">
-                    Contact
-                </NavLink>
-            </div>
-        </div>
-    )
+  return (
+    <div className="nav-bar">
+      <NavLink to="/" className="nav-one">
+        Pablo Vehahaha
+      </NavLink>
+      <a
+        className="nav-two"
+        href="mailto:Pablo@Arbys.com"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Contact
+      </a>
+    </div>
+  );
 }
