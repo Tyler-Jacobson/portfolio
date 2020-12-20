@@ -55,7 +55,7 @@ body{
 most of which which are for temporary structure only and can safely be removed once the projects are added */
 
 .app-container {
-  width: 50%;
+  width: 70%;
   /* box-shadow: 1px 1px black; */
   box-shadow: 0.5px 0.5px 0.5px 0.5px #d8d8d8;
   height: 180vh;
@@ -70,11 +70,11 @@ most of which which are for temporary structure only and can safely be removed o
 }
 
 .nav-one {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .nav-two {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .bio {
@@ -83,4 +83,45 @@ most of which which are for temporary structure only and can safely be removed o
 
 .projects {
   min-height: 100%;
+}
+
+/* Animation */
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
 }
