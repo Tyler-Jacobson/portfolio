@@ -1,13 +1,39 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+
+import projects from "./projectData";
 
 export default function Project(props) {
-  const { name, image, description } = props.location.state;
+  let { id } = useParams();
+
+
+  console.log(projects)
+  let currentPage = {};
+
+  currentPage = projects.filter((project) => {
+    console.log(project.id, id);
+    return project.id == id;
+  })
+  currentPage = currentPage[0];
+
+  console.log(currentPage)
+
+
 
   return (
     <div>
-      <p>{name}</p>
-      <p>{description}</p>
-      <img src={image} alt={`Details for ${name}`} />
+      <p>{currentPage.name}</p>
+      <p>{currentPage.description}</p>
+
+      {
+        currentPage.images.map((image) => {
+          return (
+            <img src={image} alt={`Details for ${currentPage.name}`} />
+          )
+        })
+      }
+      
     </div>
   );
+
 }
