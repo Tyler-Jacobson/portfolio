@@ -16,7 +16,7 @@ export default function Home() {
       <section className="projects">
         {projects.map(function (project) {
           return (
-            <div onClick={() => onClick(project.id)}>
+            <div className="zoom" onClick={() => onClick(project.id)}>
               <h2>{project.name}</h2>
               <h3>{project.shortDescription}</h3>
               <img src={project.bannerImage} alt={`Banner for ${project.name}`} />

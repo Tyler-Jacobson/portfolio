@@ -24,14 +24,14 @@ export default function Project(props) {
 
 
   return (
-    <div className="animated animatedFadeInUp fadeInUp"  >
+    <div className="animated animatedFadeInUp fadeInUp" >
       <p >{currentPage.name}</p>
       <p>{currentPage.description}</p>
 
       {
         currentPage.images.map((image) => {
           return (
-            <img src={image} alt={`Details for ${currentPage.name}`} />
+            <img className="animatedimg animatedFadeInUp fadeInUp" src={image} alt={`Details for ${currentPage.name}`} />
           )
         })
       }
