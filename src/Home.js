@@ -1,14 +1,12 @@
-import React, { useCallback } from "react";
-import { Link, useHistory } from "react-router-dom";
+import React from "react";
+import { useHistory } from "react-router-dom";
 
-
-import projects from "./projectData"
-
+import projects from "./projectData";
 
 export default function Home() {
-    const history = useHistory();
+  const history = useHistory();
 
-    const onClick = (path, projectInfo) => history.push({pathname: `projects/${path}`, state: projectInfo});
+  const onClick = (path) => history.push(`projects/${path}`);
 
   return (
     <div>
@@ -18,8 +16,10 @@ export default function Home() {
       <section className="projects">
         {projects.map(function (project) {
           return (
-            <div onClick={() => onClick(project.id, project)}>
-                <h2>{project.name}</h2>
+            <div onClick={() => onClick(project.id)}>
+              <h2>{project.name}</h2>
+              <h3>{project.shortDescription}</h3>
+              <img src={project.bannerImage} alt={`Banner for ${project.name}`} />
             </div>
           );
         })}
