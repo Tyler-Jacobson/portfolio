@@ -10,7 +10,7 @@ export default function Nav() {
             <NavLink to="/" >
                 Tyler Jacobson
             </NavLink>
-            <div>
+            <div className="nav-links">
                 <NavLink to="/">
                     Home
                 </NavLink>
