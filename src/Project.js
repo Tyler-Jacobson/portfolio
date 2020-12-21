@@ -24,18 +24,27 @@ export default function Project(props) {
 
 
   return (
-    <div className="animated animatedFadeInUp fadeInUp project" >
-      <p >{currentPage.name}</p>
-      <p>{currentPage.description}</p>
+   
 
+    <div className="animated animatedFadeInUp fadeInUp project" >
+      <div className="projecttext">
+      <div className="descriptiontext">
+      <p>{currentPage.name}</p>
+      <p>{currentPage.description}</p>
+      </div>
+      </div>
+      <div className="greybackground">
       {
+        
         currentPage.images.map((image) => {
           return (
+            <div className="imgcontainer">
             <img className="animatedimg animatedFadeInUp fadeInUp" src={image} alt={`Details for ${currentPage.name}`} />
-          )
-        })
+          </div>
+          )  
+      })
       }
-      
+      </div>
     </div>
   );
 
