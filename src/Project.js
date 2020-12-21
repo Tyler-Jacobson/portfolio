@@ -1,6 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import projects from "./projectData";
+import github from "./assets/Github.png"
+
 
 import "./App.scss";
 
@@ -12,7 +14,8 @@ export default function Project(props) {
 
   currentPage = projects.filter((project) => {
     console.log(project.id, id);
-    return project.id == id;
+    // eslint-disable-next-line eqeqeq
+    return parseInt(project.id) === parseInt(id);
   });
   currentPage = currentPage[0];
 
@@ -37,7 +40,8 @@ export default function Project(props) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Visit Github Repository
+                  Visit Github Repository:
+                  <img className="githubicon" src={github} alt="Github icon"></img>
                 </a>
                 <span></span>
               </div>
