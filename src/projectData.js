@@ -1,6 +1,6 @@
 import image from "./assets/logo512.png";
 import example1 from "./assets/example1.png";
-import firebase from "./assets/Firebase.png"
+import firebase from "./assets/firebase.png"
 import redux from "./assets/Redux.svg"
 import react from "./assets/React.svg"
 import figma from "./assets/Figma.svg"
