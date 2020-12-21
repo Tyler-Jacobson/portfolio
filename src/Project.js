@@ -1,13 +1,13 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import projects from "./projectData";
-import github from "./assets/Github.png"
-
+import github from "./assets/Github.png";
 
 import "./App.scss";
 
 export default function Project(props) {
   let { id } = useParams();
+  const history = useHistory();
 
   console.log(projects);
   let currentPage = {};
@@ -36,13 +36,19 @@ export default function Project(props) {
                   Visit Website
                 </a>
                 <a
+                  className="project-links-github"
                   href={currentPage.githubRepo}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Visit Github Repository:
-                  <img className="githubicon" src={github} alt="Github icon"></img>
+                  <p>Visit Github Repository:</p>
+                  <img
+                    className="githubicon"
+                    src={github}
+                    alt="Github icon"
+                  ></img>
                 </a>
+
                 <span></span>
               </div>
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 import {useHistory } from "react-router-dom";
 // import Title from './assets/Title.png'
 import Title from './assets/NewIcon2.svg'
-import linkedIn from './assets/linkedin.png'
+import linkedIn from './assets/Linkedin.png'
 import Mail from './assets/Mail.png'
 import Resume from "./assets/Resume.png"
 import "./App.scss";
