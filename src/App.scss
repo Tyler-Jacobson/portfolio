@@ -14,7 +14,7 @@ time, mark, audio, video {
 	margin: 0;
   padding: 0;
   border: 0;
-  border: 1px solid red;
+  // border: 1px solid red;
   font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
@@ -85,14 +85,22 @@ font-weight: bold;
 }
 
 .bio {
-  min-height: 30vh;
+  min-height: 50vh;
   width: 99%;
   border-bottom: 1px solid rgba(141, 141, 141, 0.3);
 }
 
 .projects {
   min-height: 100%;
-  width: 70%;
+  width: 50%;
+  margin-top: 8vh
+}
+
+.projects-title {
+  font-size: 3.5rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  font-weight: bold;
 }
 
 .project {
@@ -230,11 +238,35 @@ img{
   justify-content: space-around;
   transition: transform .2s; /* Animation */
   cursor: pointer;
-  // max-width: 80%;
+  max-width: 100%;
   margin-bottom: 3vh;
   border-radius: 3px;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-height: 45vh;
 }
+
+.zoom-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  min-height: 30vh;
+  width: 35%;
+  text-align: left;
+}
+
+.zoom-inner h2 {
+  font-size: 4rem;
+}
+
+.zoom-inner h3 {
+  font-size: 1.7rem;
+  max-width: 100%;
+  color:rgba(233, 233, 233, 0.8)
+}
+
+
+
 .purple{
   background-color: #4A2BAF;
 }
@@ -244,6 +276,16 @@ img{
 .rose{
   background-color: #9E2B79;
 }
+
+.whitetech {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  min-width: 100%;
+}
+
+
+
 .whitetech img{
 // filter:  brightness(0) invert(1)
   
