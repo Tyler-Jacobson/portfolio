@@ -14,7 +14,7 @@ time, mark, audio, video {
 	margin: 0;
   padding: 0;
   border: 0;
- // border: 1px solid red;
+  // border: 1px solid red;
   font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
@@ -50,6 +50,7 @@ body{
   text-align: center;
   background-color: rgb(255, 255, 255);
   min-height: 200vh;
+  color: #282c35;
 }
 
 /* lots of stuff in here with min heights based on vh, 
@@ -93,17 +94,65 @@ most of which which are for temporary structure only and can safely be removed o
 .project {
   width: 100%;
 }
-.projecttext{
+.project-information{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  min-height: 60vh;
+  text-align: left;
+}
+
+.project-information-spacer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 50vh;
+  max-width: 60%;
+}
+
+.project-information h2 {
+  font-size: 5rem;
+}
+
+
+
+.project-information h3 {
+  font-size: 2rem;
+}
+
+.description-text-outer {
+  display: flex;
+  align-items: center;
   width: 100%;
 }
-.descriptiontext{
+
+.description-text{
   display: flex;
   flex-direction: column;
   max-width: 70%;
   align-self: center;
   margin-bottom: 3%;
+  max-width: 80%;
+}
+
+.description-text-inner {
+
+  margin-bottom: 2rem;
+}
+
+.description-text-inner h2{
+  margin-bottom: 1.5rem;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-links a {
+  font-size: 1.8rem;
+  color: rgb(0, 117, 250);
 }
 
 img{
@@ -112,30 +161,47 @@ img{
   border-radius: 3px;
 }
 .greybackground{
-  background-color: #7474e7;
+  background-color: #cccccc;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .imgcontainer{
-  width: 70%;
+  width: 60%;
+  transition: transform .3s; /* Animation */
+
+//  box-shadow:2px 0px 0px 0px rgba(0, 0, 0, 0.3);
 }
+.imgcontainer:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.05); 
+}
+
+
 .nav-icons{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 7%;
-
+  max-width: 25%;
+  cursor: pointer;
 }
+.nav-icons img:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+.nav-icons img{
+  transition: transform .2s; /* Animation */
 
+  max-width: 50px;
+}
 .nav-icons a{
-  margin: 5px;
-  // width: 20%;
 }
 
 .logo{
-  max-width:80%;
+  max-width:230px;
 }
 .logo:hover{
   cursor: pointer;
@@ -158,6 +224,28 @@ img{
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1); 
+}
+
+.technologies-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.technologies-container p {
+  max-width: 100%;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.technology-icon {
+  max-width: 50px;
+  max-height: 50px;
 }
 
 
