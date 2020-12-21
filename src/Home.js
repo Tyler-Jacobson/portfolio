@@ -9,7 +9,7 @@ export default function Home() {
   const onClick = (path) => history.push(`projects/${path}`);
 
   return (
-    <div>
+    <div className="app-container">
       <section className="bio">
         <h2>Hi my name is Pablo and I suck at League of Legends</h2>
       </section>

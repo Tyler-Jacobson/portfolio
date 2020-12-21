@@ -24,7 +24,7 @@ export default function Project(props) {
 
 
   return (
-    <div className="animated animatedFadeInUp fadeInUp" >
+    <div className="animated animatedFadeInUp fadeInUp project" >
       <p >{currentPage.name}</p>
       <p>{currentPage.description}</p>
 
