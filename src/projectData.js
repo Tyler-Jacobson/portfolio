@@ -1,9 +1,10 @@
 import image from "./assets/logo512.png";
+import sitepreview from "./assets/Slackerpreviews.png";
 import example1 from "./assets/example1.png";
 import example2 from "./assets/example2.png";
 import firebase from "./assets/firebase.png"
 import redux from "./assets/Redux.svg"
-import react from "./assets/React.svg"
+import react from "./assets/React2svg.svg"
 import figma from "./assets/Figma.svg"
 import github from "./assets/Github.png"
 
@@ -20,8 +21,8 @@ const projects = [
     <br></br>
     <p>Accusamus voluptas minus corporisodit atque veritatis rerum. Aut alias voluptatibus commodi et voluptatibus iste omnis ame</p>
     </>,
-    bannerImage: example2,
-    images: [image],
+    bannerImage: sitepreview,
+    images: [sitepreview],
     siteLink: "https://myslackerclone.vercel.app/",
     githubRepo: "https://github.com/pvahanian/mySlackerClone",
     roles: "Front-End, Back-End, test, test, test, test",

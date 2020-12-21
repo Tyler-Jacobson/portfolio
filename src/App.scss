@@ -233,8 +233,9 @@ img{
 .rose{
   background-color: #9E2B79;
 }
-.whitetech{
-filter:  brightness(0) invert(1)
+.whitetech img{
+// filter:  brightness(0) invert(1)
+  
 }
 .zoom img{
   max-width: 50%;
