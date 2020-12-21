@@ -1,5 +1,6 @@
 import image from "./assets/logo512.png";
 import example1 from "./assets/example1.png";
+import example2 from "./assets/example2.png";
 import firebase from "./assets/firebase.png"
 import redux from "./assets/Redux.svg"
 import react from "./assets/React.svg"
@@ -9,9 +10,9 @@ import github from "./assets/Github.png"
 const projects = [
   {
     id: 1,
-    name: "Project 1",
+    name: "Slacker Clone",
     shortDescription:
-    'Tommy Vercetti \n Carl Johnson',
+    'RealTime Messaging application',
     description:
     <>
     <p>Project Veniam velit modi in rerum officia rerum. Praesentium ipsam repellendus maiores veniam</p>
@@ -19,12 +20,13 @@ const projects = [
     <br></br>
     <p>Accusamus voluptas minus corporisodit atque veritatis rerum. Aut alias voluptatibus commodi et voluptatibus iste omnis ame</p>
     </>,
-    bannerImage: image,
+    bannerImage: example2,
     images: [image],
-    siteLink: "https://wunnle.dev/",
-    githubRepo: "https://github.com/Tyler-Jacobson/portfolio",
+    siteLink: "https://myslackerclone.vercel.app/",
+    githubRepo: "https://github.com/pvahanian/mySlackerClone",
     roles: "Front-End, Back-End, test, test, test, test",
     technologies: [firebase, redux, react, figma, github],
+    color: "purple",
   },
   {
     id: 2,
@@ -40,9 +42,10 @@ const projects = [
     </>,    bannerImage: image,
     images: [example1, image],
     siteLink: "https://wunnle.dev/",
-    githubRepo: "https://github.com/Tyler-Jacobson/portfolio",
+    githubRepo: "https://github.com/pvahanian/mySlackerClone",
     roles: "Front-End, Back-End, Design and Development",
-    technologies: [firebase, redux, react, figma, github],
+    technologies: [firebase, react, figma],
+    color: "rose",
   },
 ];
 

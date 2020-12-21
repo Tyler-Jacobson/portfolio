@@ -14,14 +14,22 @@ export default function Home() {
   return (
     <div className="app-container">
       <section className="bio">
-        <h2>Hi my name is Pablo and I suck at League of Legends</h2>
+        <h1 className="heytitle">Hey, I'm Pablo,<br></br></h1>
+        <h3>web developer </h3>
+      <div className="shortbio">
+        Former Financial Advisor looking to break into the tech world.
+      </div>
       </section>
       <section className="projects">
         {projects.map(function (project) {
           return (
-            <div className="zoom" onClick={() => onClick (project.id)}>
+            <div className={`zoom ${project.color}`} onClick={() => onClick (project.id)}>
+              <div>
               <h2>{project.name}</h2>
               <h3>{project.shortDescription}</h3>
+              
+              <img className="whitetech" src={project.technologies[0]} alt="tech"/>
+              </div>
               <img src={project.bannerImage} alt={`Banner for ${project.name}`} />
             </div>
           );

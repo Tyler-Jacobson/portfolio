@@ -79,6 +79,10 @@ most of which which are for temporary structure only and can safely be removed o
 .nav-two {
   margin-right: 1rem;
 }
+.heytitle{
+font-size: 5rem;
+font-weight: bold;
+}
 
 .bio {
   min-height: 30vh;
@@ -179,6 +183,9 @@ img{
   transform: scale(1.05); 
 }
 
+.githubicon{
+  width:50px;
+}
 
 .nav-icons{
   display: flex;
@@ -201,14 +208,41 @@ img{
 }
 
 .logo{
-  max-width:230px;
+  max-width:300px;
 }
 .logo:hover{
   cursor: pointer;
 }
 .zoom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   transition: transform .2s; /* Animation */
   cursor: pointer;
+  // max-width: 80%;
+  margin-bottom: 3vh;
+  border-radius: 3px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.purple{
+  background-color: #4A2BAF;
+}
+.lightblue{
+  background-color: #0F61C0;
+}
+.rose{
+  background-color: #9E2B79;
+}
+.whitetech{
+filter:  brightness(0) invert(1)
+}
+.zoom img{
+  max-width: 50%;
+}
+.zoom div{
+
+  color: white;
+  max-width: 50%;
 }
 
 .animatedimg {
@@ -223,7 +257,7 @@ img{
 .zoom:hover {
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1); 
+  transform: scale(1.04); 
 }
 
 .technologies-container {
@@ -298,6 +332,8 @@ img{
   -webkit-animation-name: fadeInUp;
 }
 
-// html {
-//   scroll-behavior: smooth;
-// }
+html {
+  padding:5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

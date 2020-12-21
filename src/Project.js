@@ -1,6 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import projects from "./projectData";
+import github from "./assets/Github.png"
+
 
 import "./App.scss";
 
@@ -38,7 +40,8 @@ export default function Project(props) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Visit Github Repository
+                  Visit Github Repository:
+                  <img className="githubicon" src={github} alt="Github icon"></img>
                 </a>
                 <span></span>
               </div>
