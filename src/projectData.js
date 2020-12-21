@@ -2,7 +2,7 @@ import image from "./assets/logo512.png";
 import sitepreview from "./assets/Slackerpreviews.png";
 import example1 from "./assets/example1.png";
 import example2 from "./assets/example2.png";
-import firebase from "./assets/firebase.png"
+import firebase from "./assets/Firebase.png"
 import redux from "./assets/Redux.svg"
 import react from "./assets/React2svg.svg"
 import figma from "./assets/Figma.svg"
