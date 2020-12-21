@@ -13,13 +13,13 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-  border: 0;
   border: 1px solid red;
-	font-size: 100%;
+  font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
     text-decoration: none;
 }
+
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -55,9 +55,7 @@ body{
 most of which which are for temporary structure only and can safely be removed once the projects are added */
 
 .app-container {
-  width: 50%;
-  /* box-shadow: 1px 1px black; */
-  box-shadow: 0.5px 0.5px 0.5px 0.5px #d8d8d8;
+  width: 70%;
   height: 180vh;
 }
 
@@ -70,11 +68,11 @@ most of which which are for temporary structure only and can safely be removed o
 }
 
 .nav-one {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .nav-two {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .bio {
@@ -83,4 +81,72 @@ most of which which are for temporary structure only and can safely be removed o
 
 .projects {
   min-height: 100%;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+.logo{
+  max-width:80%;
+}
+.logo:hover{
+  cursor: pointer;
+}
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+/* Animation */
+
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: .6s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedimg {
+  animation-duration: .6s;
+  animation-delay: .8s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
 }

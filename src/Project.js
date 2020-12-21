@@ -1,7 +1,10 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-
 import projects from "./projectData";
+
+import "./App.scss";
+
+
 
 export default function Project(props) {
   let { id } = useParams();
@@ -21,14 +24,14 @@ export default function Project(props) {
 
 
   return (
-    <div>
-      <p>{currentPage.name}</p>
+    <div className="animated animatedFadeInUp fadeInUp" >
+      <p >{currentPage.name}</p>
       <p>{currentPage.description}</p>
 
       {
         currentPage.images.map((image) => {
           return (
-            <img src={image} alt={`Details for ${currentPage.name}`} />
+            <img className="animatedimg animatedFadeInUp fadeInUp" src={image} alt={`Details for ${currentPage.name}`} />
           )
         })
       }
