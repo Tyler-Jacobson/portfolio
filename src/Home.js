@@ -27,8 +27,13 @@ export default function Home() {
               <div>
               <h2>{project.name}</h2>
               <h3>{project.shortDescription}</h3>
-              
-              <img className="whitetech" src={project.technologies[0]} alt="tech"/>
+              <div className="whitetech">
+              <img src={project.technologies[0]} alt="tech"/>
+              <img src={project.technologies[1]} alt="tech"/>
+              <img src={project.technologies[2]} alt="tech"/>
+              <img src={project.technologies[3]} alt="tech"/>
+              <img src={project.technologies[4]} alt="tech"/>
+              </div>
               </div>
               <img src={project.bannerImage} alt={`Banner for ${project.name}`} />
             </div>
