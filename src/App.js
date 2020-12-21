@@ -10,12 +10,10 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <div className="app-container">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/projects/:id" component={Project} />
         </Switch>
-      </div>
     </div>
   );
 }

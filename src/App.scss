@@ -12,14 +12,15 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
-	padding: 0;
+  padding: 0;
   border: 0;
-  border: 1px solid red;
-	font-size: 100%;
+  // border: 1px solid red;
+  font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
     text-decoration: none;
 }
+
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -55,9 +56,10 @@ body{
 most of which which are for temporary structure only and can safely be removed once the projects are added */
 
 .app-container {
-  width: 70%;
-  /* box-shadow: 1px 1px black; */
-  box-shadow: 0.5px 0.5px 0.5px 0.5px #d8d8d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   height: 180vh;
 }
 
@@ -79,13 +81,44 @@ most of which which are for temporary structure only and can safely be removed o
 
 .bio {
   min-height: 30vh;
+  width: 99%;
+  border-bottom: 1px solid rgba(141, 141, 141, 0.3);
 }
 
 .projects {
   min-height: 100%;
+  width: 70%;
+}
+
+.project {
+  width: 70%;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.logo{
+  max-width:80%;
+}
+.logo:hover{
+  cursor: pointer;
+}
+.zoom {
+  transition: transform .2s; /* Animation */
+  cursor: pointer;
 }
 
 /* Animation */
+
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+
+/* Animation 2 */
 
 @keyframes fadeInUp {
   from {
@@ -110,9 +143,17 @@ most of which which are for temporary structure only and can safely be removed o
 }
 
 .animated {
-  animation-duration: 1s;
+  animation-duration: .6s;
   animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedimg {
+  animation-duration: .6s;
+  animation-delay: .8s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.6s;
   -webkit-animation-fill-mode: both
 }
 
