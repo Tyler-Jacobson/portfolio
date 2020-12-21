@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink,useHistory } from "react-router-dom";
+import {useHistory } from "react-router-dom";
 import Title from './assets/Title.png'
 import linkedIn from './assets/linkedin.png'
 import Mail from './assets/Mail.png'

@@ -12,7 +12,8 @@ export default function Project(props) {
 
   currentPage = projects.filter((project) => {
     console.log(project.id, id);
-    return project.id == id;
+    // eslint-disable-next-line eqeqeq
+    return parseInt(project.id) === parseInt(id);
   });
   currentPage = currentPage[0];
 
