@@ -39,6 +39,7 @@ export default function Home() {
         </p>
         </div>
       </section>
+      <div className="divborder"></div>
       <section className="projects">
         <h2 className="projects-title">Projects</h2>
         {projects.map(function (project) {

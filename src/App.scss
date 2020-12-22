@@ -99,22 +99,26 @@ font-weight: bold;
 }
 
 .contactme{
-
   display: flex;
   align-items: center;
   justify-content: start;
 }
+
 .contactme span{
   padding:4px;
-  border: 2px solid blue;
+  color:#0F61C0;
+  background-color: white;
   border-radius: 4px;
-  transition: transform 1.3s;
+  transition: transform .3s;
+  border: 2px solid #0F61C0;
 }
 
 .contactme span:hover{
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 10ms linear;
+  background-color:#0F61C0;
+  color: white;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
 }
 
 .bio {
@@ -122,7 +126,11 @@ font-weight: bold;
   align-items:center;
   justify-content: space-evenly;
   min-height: 50vh;
-  width: 85%;
+  width: 70%;
+}
+
+.divborder{
+  width: 100%;
   border-bottom: 1px solid rgba(141, 141, 141, 0.3);
 }
 

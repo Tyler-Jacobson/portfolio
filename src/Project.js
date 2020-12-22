@@ -1,14 +1,13 @@
 import React from "react";
-import { useParams, useHistory } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import projects from "./projectData";
-import github from "./assets/Github.png";
+import github from "./assets/Github.svg";
 import arrow from "./assets/link-arrow.svg";
 
 import "./App.scss";
 
 export default function Project(props) {
   let { id } = useParams();
-  const history = useHistory();
 
   console.log(projects);
   let currentPage = {};

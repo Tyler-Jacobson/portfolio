@@ -23,8 +23,8 @@ const projects = [
     images: [sitepreview],
     siteLink: "https://myslackerclone.vercel.app/",
     githubRepo: "https://github.com/pvahanian/mySlackerClone",
-    roles: "Front-End, Back-End, test, test, test, test",
-    technologies: [firebase, redux, react, figma, github, materialui],
+    roles: "Front-End, Back-End and Designer",
+    technologies: [firebase, redux, react, figma, materialui],
     color: "purple",
   },
   // {
@@ -62,8 +62,8 @@ const projects = [
     images: [sitepreview],
     siteLink: "https://myslackerclone.vercel.app/",
     githubRepo: "https://github.com/pvahanian/mySlackerClone",
-    roles: "Front-End, Back-End, test, test, test, test",
-    technologies: [firebase, redux, react, figma, github, materialui],
+    roles: "Front-End, Back-End and Designer",
+    technologies: [firebase, redux, react, figma, materialui],
     color: "lightblue",
   },
 ];
