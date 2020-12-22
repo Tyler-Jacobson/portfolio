@@ -7,11 +7,12 @@ import materialui from "./assets/MaterialUI.svg"
 import ewb from "./assets/211.png"
 import figmamobile from "./assets/mobile211.png"
 import figmadesktop from "./assets/desktop211.png"
+import figmaslack from "./assets/figmaslack.png"
 
 const projects = [
   {
     id: 1,
-    name: "S</>acker",
+    name: <strong className='bold'>S{"</>"}acker</strong>,
     shortDescription:
     'RealTime Messaging application',
     description:
@@ -23,7 +24,7 @@ const projects = [
     <p>It was designed and prototyped in <strong className="bold">Figma</strong>.  We wanted to create a simple application with easy Authentication</p>
     </>,
     bannerImage: sitepreview,
-    images: [sitepreview],
+    images: [sitepreview,figmaslack],
     siteLink: "https://myslackerclone.vercel.app/",
     githubRepo: "https://github.com/pvahanian/mySlackerClone",
     roles: <p>Front-End, Back-End and Designer</p>,
