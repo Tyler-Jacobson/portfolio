@@ -14,7 +14,7 @@ time, mark, audio, video {
 	margin: 0;
   padding: 0;
   border: 0;
-  //border: 1px solid red;
+  // border: 1px solid red;
   font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
@@ -49,7 +49,6 @@ body{
   align-items: center;
   text-align: center;
   background-color: rgb(255, 255, 255);
-  min-height: 200vh;
   color: #282c35;
 }
 
@@ -61,7 +60,7 @@ most of which which are for temporary structure only and can safely be removed o
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 180vh;
+  margin-bottom: 10vh;
 }
 
 
@@ -130,6 +129,7 @@ font-weight: bold;
   flex-direction: column;
   align-items: center;
   background-color:#F4F4F5;
+  width: 100vw;
 }
 
 .projects-title {
@@ -438,12 +438,17 @@ img{
   .bio{
     width: 80%;
     justify-content: space-between;
+    min-height: 0vh;
   }
   .projects{
     width: 80%;
+    margin-top: 3vh;
   }
   .shortbio{
     max-width: 50%;
+  }
+  .divborder {
+    margin-top: 1rem;
   }
 }
 @media (max-width: 800px) {
@@ -463,9 +468,10 @@ img{
     align-items: center;
   }
   .shortbio{
+    margin-top: 1rem;
     text-align: left;
     font-size: 1.2rem;
-    min-width: 100%;
+    min-width: 90%;
   }
   .projects{
     width: 100%;
@@ -488,7 +494,11 @@ img{
     display: flex;
     flex-direction: column;
     max-height: 110vh;
+    min-height: 30vh;
     min-width: 90%;
+  }
+  .project-information {
+    min-height: 10vh;
   }
 .nav-icons{
     max-width: 100%;
