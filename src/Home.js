@@ -14,12 +14,29 @@ export default function Home() {
   return (
     <div className="app-container">
       <section className="bio">
-        <h1 className="heytitle">
-          Hey, I'm Pablo,<br></br>
-        </h1>
-        <h3>web developer </h3>
+        <div className="titlediv">
+          <h1>
+            Hey, I'm Pablo,<br></br>
+          </h1>
+          <h3>Web Developer</h3>
+          <a 
+            className="contactme"
+            href="mailto:pablo.vahanian@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span>Contact me </span>
+          </a>
+
+        </div>
+
         <div className="shortbio">
-          Former Financial Advisor looking to break into the tech world.
+        <p>Veniam velit modi in rerum officia rerum. Praesentium ipsam repellendus maiores veniam itaque sit et provident. Numquam rerum eaque eos saepe expedita",
+        </p>
+        <br></br>
+        <p>description description Veniam velit modi in rerum officia rerum. Praesentium ipsam repellendus maiores veniam itaque sit et provident. Numquam rerum eaque eos saepe expedita",
+        description
+        </p>
         </div>
       </section>
       <section className="projects">
@@ -30,7 +47,7 @@ export default function Home() {
               className={`zoom ${project.color}`}
               onClick={() => onClick(project.id)}
             >
-              <div className="zoom-inner" >
+              <div className="zoom-inner">
                 <h2>{project.name}</h2>
                 <h3>{project.shortDescription}</h3>
                 <div className="whitetech">

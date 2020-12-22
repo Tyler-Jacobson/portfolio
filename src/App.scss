@@ -79,14 +79,50 @@ most of which which are for temporary structure only and can safely be removed o
 .nav-two {
   margin-right: 1rem;
 }
-.heytitle{
+.titlediv {
+  text-align: left;
+  font-weight: bold;
+}
+
+.titlediv h1{
 font-size: 5rem;
 font-weight: bold;
 }
 
+.titlediv h3{
+  font-size: 3rem;
+  color:rgba(59, 59, 59, 0.7)
+}
+
+.shortbio{
+  max-width: 30%;
+}
+
+.contactme{
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.contactme span{
+  padding:4px;
+  border: 2px solid blue;
+  border-radius: 4px;
+  transition: transform 1.3s;
+}
+
+.contactme span:hover{
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 10ms linear;
+}
+
 .bio {
+  display: flex;
+  align-items:center;
+  justify-content: space-evenly;
   min-height: 50vh;
-  width: 99%;
+  width: 85%;
   border-bottom: 1px solid rgba(141, 141, 141, 0.3);
 }
 

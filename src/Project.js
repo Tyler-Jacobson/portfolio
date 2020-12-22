@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, useHistory } from "react-router-dom";
 import projects from "./projectData";
 import github from "./assets/Github.png";
+import arrow from "./assets/link-arrow.svg";
 
 import "./App.scss";
 
@@ -31,17 +32,22 @@ export default function Project(props) {
                 <h2>{currentPage.name}</h2>
                 <h3>{currentPage.description}</h3>
               </div>
-              <div className="project-links">
-                <a href={currentPage.siteLink} target="_blank" rel="noreferrer">
-                  Visit Website
+
+              <div className="project-links ">
+                <a className="project-links-github"
+                  href={currentPage.siteLink} target="_blank" rel="noreferrer">
+                  <img src={arrow} alt="contact me arrow" />
+                  <span>Visit Website</span>
                 </a>
+
                 <a
                   className="project-links-github"
                   href={currentPage.githubRepo}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <p>Visit Github Repository:</p>
+                  <img src={arrow} alt="contact me arrow" />
+                  <p>Github Repository:</p>
                   <img
                     className="githubicon"
                     src={github}
