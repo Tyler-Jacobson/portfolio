@@ -58,6 +58,7 @@ export default function Home() {
                 </div>
               </div>
               <img
+                
                 src={project.bannerImage}
                 alt={`Banner for ${project.name}`}
               />
