@@ -14,7 +14,7 @@ time, mark, audio, video {
 	margin: 0;
   padding: 0;
   border: 0;
-  // border: 1px solid red;
+   border: 1px solid red;
   font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
@@ -61,7 +61,7 @@ most of which which are for temporary structure only and can safely be removed o
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 180vh;
+  min-height: 180vh;
 }
 
 .nav-bar {
@@ -71,6 +71,7 @@ most of which which are for temporary structure only and can safely be removed o
   min-height: 10vh;
   align-items: center;
 }
+
 
 .nav-one {
   margin-left: 1rem;
@@ -105,7 +106,7 @@ font-weight: bold;
 }
 
 .contactme span{
-  padding:4px;
+  padding:10px;
   color:#0F61C0;
   background-color: white;
   border-radius: 4px;
@@ -116,9 +117,9 @@ font-weight: bold;
 .contactme span:hover{
   background-color:#0F61C0;
   color: white;
-  -webkit-transition: background-color 300ms linear;
-  -ms-transition: background-color 300ms linear;
-  transition: background-color 300ms linear;
+  -webkit-transition: background-color 400ms linear;
+  -ms-transition: background-color 400ms linear;
+  transition: background-color 400ms linear;
 }
 
 .bio {
@@ -434,4 +435,47 @@ html {
   padding:5px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+@media (max-width: 800px) {
+  .logo {
+    width: 200px;
+  }
+  .bio{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  .titlediv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 100%;
+    align-items: center;
+  }
+  .shortbio{
+    text-align: left;
+    font-size: 1.2rem;
+    min-width: 100%;
+  }
+  .projects{
+    width: 100%;
+    border: 1px solid red;
+
+  }
+  .projects-title{
+    font-size: 3rem;
+    text-align: center;
+  }
+  .zoom-inner h2{
+    font-size: 2.2rem;
+  }
+  .zoom-inner h3{
+    font-size: 1.6rem;
+  }
+  .bannerimg{
+    margin:0;
+    width: 90%;
+    height: 100vh;
+  }
 }
