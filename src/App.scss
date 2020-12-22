@@ -14,7 +14,7 @@ time, mark, audio, video {
 	margin: 0;
   padding: 0;
   border: 0;
-  // border: 1px solid red;
+  //border: 1px solid red;
   font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
@@ -61,24 +61,10 @@ most of which which are for temporary structure only and can safely be removed o
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 180vh;
+  min-height: 180vh;
 }
 
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  min-width: 100%;
-  min-height: 10vh;
-  align-items: center;
-}
 
-.nav-one {
-  margin-left: 1rem;
-}
-
-.nav-two {
-  margin-right: 1rem;
-}
 .titlediv {
   text-align: left;
   font-weight: bold;
@@ -101,11 +87,11 @@ font-weight: bold;
 .contactme{
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .contactme span{
-  padding:4px;
+  padding:10px;
   color:#0F61C0;
   background-color: white;
   border-radius: 4px;
@@ -116,9 +102,9 @@ font-weight: bold;
 .contactme span:hover{
   background-color:#0F61C0;
   color: white;
-  -webkit-transition: background-color 300ms linear;
-  -ms-transition: background-color 300ms linear;
-  transition: background-color 300ms linear;
+  -webkit-transition: background-color 400ms linear;
+  -ms-transition: background-color 400ms linear;
+  transition: background-color 400ms linear;
 }
 
 .bio {
@@ -137,7 +123,13 @@ font-weight: bold;
 .projects {
   min-height: 100%;
   width: 50%;
-  margin-top: 8vh
+  margin-top: 8vh;
+}
+.homegrey{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#F4F4F5;
 }
 
 .projects-title {
@@ -168,13 +160,10 @@ font-weight: bold;
 }
 
 .project-information h2 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
-
-
-
 .project-information h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .description-text-outer {
@@ -208,19 +197,21 @@ font-weight: bold;
 }
 
 .project-links a {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: rgb(0, 117, 250);
 }
+
 
 .project-links-github {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .project-links-github img {
   margin-left: 0.5rem;
-}
+  }
 
 img{
   max-width: 100%;
@@ -228,7 +219,7 @@ img{
   border-radius: 3px;
 }
 .greybackground{
-  background-color: #cccccc;
+  background-color:#F4F4F5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -247,7 +238,16 @@ img{
 }
 
 .githubicon{
-  width:50px;
+  width:40px;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  min-height: 10vh;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .nav-icons{
@@ -255,8 +255,10 @@ img{
   justify-content: center;
   align-items: center;
   max-width: 25%;
+  margin-right: 10px;
   cursor: pointer;
 }
+
 .nav-icons img:hover{
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
@@ -264,14 +266,12 @@ img{
 }
 .nav-icons img{
   transition: transform .2s; /* Animation */
-
   max-width: 50px;
-}
-.nav-icons a{
 }
 
 .logo{
   max-width:300px;
+  margin-left: 10px;
 }
 .logo:hover{
   cursor: pointer;
@@ -366,6 +366,8 @@ img{
 }
 
 .technologies-container p {
+  font-weight: bold;
+  color:rgba(59, 59, 59, 0.7);
   max-width: 100%;
 }
 
@@ -430,8 +432,87 @@ img{
   -webkit-animation-name: fadeInUp;
 }
 
-html {
-  padding:5px;
-  padding-left: 10px;
-  padding-right: 10px;
+
+
+@media (max-width: 1200px) {
+  .bio{
+    width: 80%;
+    justify-content: space-between;
+  }
+  .projects{
+    width: 80%;
+  }
+  .shortbio{
+    max-width: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .logo {
+    width: 200px;
+  }
+  .bio{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  .titlediv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 100%;
+    align-items: center;
+  }
+  .shortbio{
+    text-align: left;
+    font-size: 1.2rem;
+    min-width: 100%;
+  }
+  .projects{
+    width: 100%;
+  }
+  .projects-title{
+    font-size: 3rem;
+    text-align: center;
+  }
+  .zoom-inner h2{
+    font-size: 2.2rem;
+  }.zoom-inner{
+    margin-left: 2%;
+   width: 80%;
+  }
+  .zoom-inner h3{
+    font-size: 1.6rem;
+  }
+  .project-information-spacer{
+    //border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    max-height: 110vh;
+    min-width: 90%;
+  }
+.nav-icons{
+    max-width: 100%;
+}
+  .description-text h2{
+    font-size: 3rem;
+  }  
+  .description-text{
+    min-width: 100%;
+  }
+  .description-text h3{
+    font-size: 1.4rem;
+  }
+  .technologies-container p {
+    font-size: 1.3rem;
+  }
+  .technologies{
+    display: flex;
+    justify-content: center;
+  }
+  .imgcontainer{
+    width: 90%;
+  }
+  .greybackground{
+    margin-top: 4vh;
+  }
 }

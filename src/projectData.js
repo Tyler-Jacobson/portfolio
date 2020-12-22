@@ -3,7 +3,6 @@ import firebase from "./assets/Firebase.svg"
 import redux from "./assets/Redux.svg"
 import react from "./assets/React2svg.svg"
 import figma from "./assets/Figma.svg"
-import github from "./assets/Github.svg"
 import materialui from "./assets/MaterialUI.svg"
 
 const projects = [

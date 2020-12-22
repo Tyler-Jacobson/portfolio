@@ -40,6 +40,7 @@ export default function Home() {
         </div>
       </section>
       <div className="divborder"></div>
+      <span className="homegrey">
       <section className="projects">
         <h2 className="projects-title">Projects</h2>
         {projects.map(function (project) {
@@ -58,6 +59,7 @@ export default function Home() {
                 </div>
               </div>
               <img
+                
                 src={project.bannerImage}
                 alt={`Banner for ${project.name}`}
               />
@@ -65,6 +67,7 @@ export default function Home() {
           );
         })}
       </section>
+      </span>
     </div>
   );
 }
