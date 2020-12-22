@@ -16,9 +16,10 @@ export default function Home() {
       <section className="bio">
         <div className="titlediv">
           <h1>
-            Hey, I'm Pablo,<br></br>
+            Hey, I'm Tyler,<br></br>
           </h1>
-          <h3>Web Developer</h3>
+          <h3>a Full Stack Web</h3>
+          <h3>Developer</h3>
           <a 
             className="contactme"
             href="mailto:pablo.vahanian@gmail.com"

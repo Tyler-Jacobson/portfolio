@@ -9,17 +9,13 @@ import "./App.scss";
 export default function Project(props) {
   let { id } = useParams();
 
-  console.log(projects);
   let currentPage = {};
 
   currentPage = projects.filter((project) => {
-    console.log(project.id, id);
     // eslint-disable-next-line eqeqeq
     return parseInt(project.id) === parseInt(id);
   });
   currentPage = currentPage[0];
-
-  console.log(currentPage);
 
   return (
     <div className="animated animatedFadeInUp fadeInUp project">
