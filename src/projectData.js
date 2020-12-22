@@ -28,7 +28,7 @@ const projects = [
   },
   {
     id: 2,
-    name: "Slacker Clone",
+    name: "Test Project",
     shortDescription:
     'RealTime Messaging application for use in blah blah blah blah',
     description:
@@ -43,7 +43,7 @@ const projects = [
     siteLink: "https://myslackerclone.vercel.app/",
     githubRepo: "https://github.com/pvahanian/mySlackerClone",
     roles: "Front-End, Back-End and Designer",
-    technologies: [firebase, redux, react, figma, materialui],
+    technologies: [firebase, redux, react, figma],
     color: "lightblue",
   },
 ];

@@ -22,7 +22,7 @@ export default function Home() {
           <h3>Developer</h3>
           <a 
             className="contactme"
-            href="mailto:pablo.vahanian@gmail.com"
+            href="mailto:TylerJacobsonSE@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
