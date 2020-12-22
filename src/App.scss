@@ -123,7 +123,13 @@ font-weight: bold;
 .projects {
   min-height: 100%;
   width: 50%;
-  margin-top: 8vh
+  margin-top: 8vh;
+}
+.homegrey{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#F4F4F5;
 }
 
 .projects-title {
@@ -154,13 +160,10 @@ font-weight: bold;
 }
 
 .project-information h2 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
-
-
-
 .project-information h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .description-text-outer {
@@ -194,19 +197,21 @@ font-weight: bold;
 }
 
 .project-links a {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: rgb(0, 117, 250);
 }
+
 
 .project-links-github {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .project-links-github img {
   margin-left: 0.5rem;
-}
+  }
 
 img{
   max-width: 100%;
@@ -214,7 +219,7 @@ img{
   border-radius: 3px;
 }
 .greybackground{
-  background-color: #cccccc;
+  background-color:#F4F4F5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -233,15 +238,16 @@ img{
 }
 
 .githubicon{
-  width:50px;
+  width:40px;
 }
 
-.nav-bar {
+.nav-bar{
   display: flex;
   justify-content: space-between;
   min-width: 100%;
   min-height: 10vh;
   align-items: center;
+  margin-top: 10px;
 }
 
 .nav-icons{
@@ -249,6 +255,7 @@ img{
   justify-content: center;
   align-items: center;
   max-width: 25%;
+  margin-right: 10px;
   cursor: pointer;
 }
 
@@ -264,6 +271,7 @@ img{
 
 .logo{
   max-width:300px;
+  margin-left: 10px;
 }
 .logo:hover{
   cursor: pointer;
@@ -358,6 +366,8 @@ img{
 }
 
 .technologies-container p {
+  font-weight: bold;
+  color:rgba(59, 59, 59, 0.7);
   max-width: 100%;
 }
 
@@ -422,12 +432,20 @@ img{
   -webkit-animation-name: fadeInUp;
 }
 
-html {
-  padding:5px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
 
+
+@media (max-width: 1200px) {
+  .bio{
+    width: 80%;
+    justify-content: space-between;
+  }
+  .projects{
+    width: 80%;
+  }
+  .shortbio{
+    max-width: 50%;
+  }
+}
 @media (max-width: 800px) {
   .logo {
     width: 200px;
