@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 // import Title from './assets/Title.png'
-import Title from "./assets/NewIcon2.svg";
+import Title from "./assets/TylerLogoTextRight.png";
 import linkedIn from "./assets/Linkedin.svg";
 import Mail from "./assets/Mail.svg";
 import Resume from "./assets/Resume.svg";
@@ -19,21 +19,21 @@ export default function Nav() {
       />
       <div className="nav-icons">
         <a
-          href="mailto:pablo.vahanian@gmail.com"
+          href="mailto:TylerJacobsonSE@gmail.com"
           target="_blank"
           rel="noreferrer"
         >
           <img src={Mail} alt="Mail Icon" />
         </a>
         <a
-          href="https://www.linkedin.com/in/pablo-vahanian/"
+          href="https://github.com/tyler-jacobson"
           target="_blank"
           rel="noreferrer"
         >
           <img src={linkedIn} alt="Linkedin Icon" />
         </a>
         <a
-          href="https://www.linkedin.com/in/pablo-vahanian/"
+          href="https://github.com/tyler-jacobson"
           target="_blank"
           rel="noreferrer"
         >
