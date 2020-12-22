@@ -43,7 +43,7 @@ export default function Home() {
       <div className="divborder"></div>
       <div className="homegrey">
       <section className="projects">
-        <h2 className="projects-title">Projects</h2>
+        <h2 className="projects-title">My Projects:</h2>
         {projects.map(function (project) {
           return (
             <div
