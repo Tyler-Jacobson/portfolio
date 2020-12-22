@@ -23,7 +23,7 @@ const projects = [
     siteLink: "https://myslackerclone.vercel.app/",
     githubRepo: "https://github.com/pvahanian/mySlackerClone",
     roles: "Front-End, Back-End and Designer",
-    technologies: [firebase, redux, react, figma, materialui],
+    technologies: [firebase, react, figma, materialui],
     color: "purple",
   },
   // {
