@@ -16,7 +16,7 @@ export default function Nav() {
         <div  className="nav-icons">
        
       <a
-        href="mailto:Pablo@Arbys.com"
+        href="mailto:pablo.vahanian@gmail.com"
         target="_blank"
         rel="noreferrer"
       >
