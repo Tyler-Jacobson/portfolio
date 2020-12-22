@@ -31,11 +31,12 @@ export default function Home() {
         </div>
 
         <div className="shortbio">
-        <p>Veniam velit modi in rerum officia rerum. Praesentium ipsam repellendus maiores veniam itaque sit et provident. Numquam rerum eaque eos saepe expedita",
+         <p> I like to working with <strong className="bold">React, Redux, Material-UI</strong> and 
+        <strong className="bold"> Node.js</strong>.
         </p>
         <br></br>
-        <p>description description Veniam velit modi in rerum officia rerum. Praesentium ipsam repellendus maiores veniam itaque sit et provident. Numquam rerum eaque eos saepe expedita",
-        description
+        <p>Coding is a never ending journey and I currently enjoy learning new technologies like
+        <strong className="bold"> Firebase, Python </strong> and <strong className="bold">Next.js</strong>.  Check out my projects below. 
         </p>
         </div>
       </section>

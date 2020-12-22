@@ -80,7 +80,13 @@ font-weight: bold;
 }
 
 .shortbio{
+  text-align: left;
   max-width: 30%;
+}
+.shortbio h3{
+  color:rgba(59, 59, 59, 0.9);
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .contactme{
@@ -212,7 +218,9 @@ font-weight: bold;
 .project-links-github img {
   margin-left: 0.5rem;
   }
-
+.bold{
+  font-weight: bold;
+}
 img{
   max-width: 100%;
   height: auto;
