@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import projects from "./projectData";
-import github from "./assets/Github.png";
+import github from "./assets/Github.svg";
 import arrow from "./assets/link-arrow.svg";
 
 import "./App.scss";
