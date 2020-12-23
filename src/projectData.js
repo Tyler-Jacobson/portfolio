@@ -35,8 +35,8 @@ const projects = [
     id: 2,
     name: <strong className='bold'>EWB 211</strong>,
     shortDescription:
-    'Update the UX design and Accessability',
-    description:
+    'Update the UX design and accessability',
+    description:  
     <>
     <p>The original concept of this design was to allow for realtime tracking of available shelter beds in the greater Portland,OR area. Unfortunately we quickly
       learned that the wouldn't help due to shelters always being at full capacity.</p>
