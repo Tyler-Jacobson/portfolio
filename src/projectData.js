@@ -8,41 +8,40 @@ import materialui from "./assets/MaterialUI.svg"
 const projects = [
   {
     id: 1,
-    name: "Slacker Clone",
+    name: "WarframePDA",
     shortDescription:
-    'RealTime Messaging application',
+    'Market Data Aggregator for the popular game Warframe',
     description:
     <>
-    <p>Project Veniam velit modi in rerum officia rerum. Praesentium ipsam repellendus maiores veniam</p>
-    <p>et provident. Numquam rerum eaque eos saepe expedita tempora est.</p>
+    <p>WarframePDA is a full stack web application which scrapes data from an online marketplace, and displays it in a way that is easy and accessible for users.</p>
     <br></br>
-    <p>Accusamus voluptas minus corporisodit atque veritatis rerum. Aut alias voluptatibus commodi et voluptatibus iste omnis ame</p>
+    <p>Said data is scraped from another online site using a Python script. The data is then sent up to an SQL database using Java Spring Boot API. After which, it is disbatched to the ReactJS front-end application</p>
     </>,
     bannerImage: sitepreview,
     images: [sitepreview],
-    siteLink: "https://myslackerclone.vercel.app/",
-    githubRepo: "https://github.com/pvahanian/mySlackerClone",
-    roles: "Front-End, Back-End and Designer",
+    siteLink: "https://www.warframepda.com/",
+    githubRepo: "https://github.com/Tyler-Jacobson/WarframePDA-Frontend",
+    roles: "Front-End, Back-End, Designer",
     technologies: [firebase, redux, react, figma, materialui],
     color: "purple",
   },
   {
     id: 2,
-    name: "Test Project",
+    name: "Irispro Script",
     shortDescription:
-    'RealTime Messaging application for use in blah blah blah blah',
+    'Script used to test memory usage on the backend of the Irispro web application',
     description:
     <>
-    <p>Project Veniam velit modi in rerum officia rerum. Praesentium ipsam repellendus maiores veniam</p>
-    <p>et provident. Numquam rerum eaque eos saepe expedita tempora est.</p>
+    <p>This was a short project I worked on for a startup company called Compellon</p>
     <br></br>
-    <p>Accusamus voluptas minus corporisodit atque veritatis rerum. Aut alias voluptatibus commodi et voluptatibus iste omnis ame</p>
+    <p>The project involved creating scripts to test the entire backend of the company's Irispro software. 
+      Unfortunately I can't show the github repository, as much of it contains private data related to Compellon</p>
     </>,
     bannerImage: sitepreview,
     images: [sitepreview],
-    siteLink: "https://myslackerclone.vercel.app/",
-    githubRepo: "https://github.com/pvahanian/mySlackerClone",
-    roles: "Front-End, Back-End and Designer",
+    siteLink: "https://www.compellon.com/nextgen-ai",
+    githubRepo: "",
+    roles: "Developer, QA",
     technologies: [firebase, redux, react, figma],
     color: "lightblue",
   },
