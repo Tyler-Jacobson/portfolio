@@ -2,9 +2,9 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.scss";
 
-import Nav from "./Nav";
-import Home from "./Home";
-import Project from "./Project";
+import Nav from "./Components/Nav";
+import Home from "./Components/Home";
+import Project from "./Components/Project";
 
 function App() {
   return (

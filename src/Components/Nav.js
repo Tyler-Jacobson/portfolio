@@ -1,11 +1,11 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 // import Title from './assets/Title.png'
-import Title from "./assets/TylerLogoTextRight.png";
-import linkedIn from "./assets/Linkedin.svg";
-import Mail from "./assets/Mail.svg";
-import Resume from "./assets/Resume.svg";
-import "./App.scss";
+import Title from "../assets/TylerLogoTextRight.png";
+import linkedIn from "../assets/Linkedin.svg";
+import Mail from "../assets/Mail.svg";
+import Resume from "../assets/Resume.svg";
+import "../App.scss";
 
 export default function Nav() {
   const history = useHistory();

@@ -1,10 +1,10 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import projects from "./projectData";
-import github from "./assets/Github.svg";
-import arrow from "./assets/link-arrow.svg";
+import projects from "../projectData";
+import github from "../assets/Github.svg";
+import arrow from "../assets/link-arrow.svg";
 
-import "./App.scss";
+import "../App.scss";
 
 export default function Project(props) {
   let { id } = useParams();
@@ -57,13 +57,12 @@ export default function Project(props) {
           <div className="technologies-container">
             <p>Roles: {currentPage.roles} </p>
             <div className="technologies">
-              {currentPage.technologies.map((icon) => {
+              {currentPage.technologies.map((tech) => {
                 return (
-                  <img
-                    className="technology-icon"
-                    src={icon}
-                    alt={`${icon} icon`}
-                  />
+                  <div className="technology-pointer">
+                    <span className="technology-pointer-text">{tech.name}</span>
+                    <img className="technology-icon" src={tech.image} alt={`${tech.name} icon`}/>
+                  </div>
                 );
               })}
             </div>
