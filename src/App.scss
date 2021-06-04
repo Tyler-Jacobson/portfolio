@@ -330,7 +330,9 @@ img{
 }
 
 .hometech img{
-  min-width: 100%
+  min-width: 100%;
+  max-width: 40px;
+  max-height: 40px;
 }
 
 .hometech-pointer-text {
@@ -406,8 +408,8 @@ img{
 }
 
 .technology-icon {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 40px;
+  max-height: 40px;
 }
 
 .technology-pointer-text {
