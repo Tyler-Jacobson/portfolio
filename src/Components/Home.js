@@ -50,9 +50,12 @@ export default function Home() {
                 <div className="zoom-inner">
                   <h2>{project.name}</h2>
                   <h3>{project.shortDescription}</h3>
-                  <div className="whitetech">
+                  <div className="hometech">
                     {project.technologies.map((tech) => {
-                      return <img src={tech} alt="technology icon" />;
+                      return <div className="hometech-pointer">
+                        <span className="hometech-pointer-text">{tech.name}</span>
+                        <img src={tech.image} alt={`${tech.name} icon`} />
+                      </div>
                     })}
                   </div>
                 </div>
