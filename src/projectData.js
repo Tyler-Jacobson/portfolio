@@ -1,9 +1,12 @@
 import warframepdaPreview from "./assets/warframepda/3-devices-black.png";
-import firebase from "./assets/Firebase.svg"
-import redux from "./assets/Redux.svg"
-import react from "./assets/React2svg.svg"
-import figma from "./assets/Figma.svg"
-import materialui from "./assets/MaterialUI.svg"
+
+// technology icon imports
+import HTML from "./assets/technologyIcons/HTML.png"
+import CSS from "./assets/technologyIcons/CSS.png"
+import React from "./assets/technologyIcons/React.png"
+import SpringBoot from "./assets/technologyIcons/SpringBoot.png"
+import PostgreSQL from "./assets/technologyIcons/PostgreSQL.png"
+import PythonRequests from "./assets/technologyIcons/PythonRequests.png"
 
 const projects = [
   {
@@ -22,11 +25,14 @@ const projects = [
     siteLink: "https://www.warframepda.com/",
     githubRepo: "https://github.com/Tyler-Jacobson/WarframePDA-Frontend",
     roles: "Front-End, Back-End, Designer",
-    technologies: [{"name": "Firebase", "image": firebase}, 
-                   {"name": "Redux", "image": redux}, 
-                   {"name": "React", "image": react}, 
-                   {"name": "Figma", "image": figma}, 
-                   {"name": "MaterialUI", "image": materialui}],
+    technologies: [{"name": "HTML", "image": HTML}, 
+                   {"name": "CSS", "image": CSS}, 
+                   {"name": "React", "image": React}, 
+                   {"name": "PostgreSQL", "image": PostgreSQL},
+                   {"name": "SpringBoot", "image": SpringBoot},
+                   {"name": "Requests (Python)", "image": PythonRequests}
+                  
+                  ],
     color: "purple",
   },
   // {
