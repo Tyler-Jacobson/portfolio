@@ -4,7 +4,7 @@ import warframepdaPreview from "./assets/warframepda/3-devices-black.png";
 import HTML from "./assets/technologyIcons/HTML.png"
 import CSS from "./assets/technologyIcons/CSS.png"
 import React from "./assets/technologyIcons/React.png"
-import SpringBoot from "./assets/technologyIcons/SpringBoot.png"
+import Spring from "./assets/technologyIcons/SpringBoot.png"
 import PostgreSQL from "./assets/technologyIcons/PostgreSQL.png"
 import PythonRequests from "./assets/technologyIcons/PythonRequests.png"
 
@@ -29,7 +29,7 @@ const projects = [
                    {"name": "CSS", "image": CSS}, 
                    {"name": "React", "image": React}, 
                    {"name": "PostgreSQL", "image": PostgreSQL},
-                   {"name": "SpringBoot", "image": SpringBoot},
+                   {"name": "Java Spring", "image": Spring},
                    {"name": "Requests (Python)", "image": PythonRequests}
                   
                   ],
