@@ -26,7 +26,7 @@ export default function Nav() {
           <img src={Mail} alt="Mail Icon" />
         </a>
         <a
-          href="https://github.com/tyler-jacobson"
+          href="https://www.linkedin.com/in/tyler-e-jacobson/"
           target="_blank"
           rel="noreferrer"
         >
