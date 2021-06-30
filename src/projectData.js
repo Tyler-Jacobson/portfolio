@@ -1,8 +1,11 @@
 import warframepdaPreview from "./assets/warframepda/3-devices-black.png";
 
+import potluckPlannerPreview from "./assets/potluck/3-devices-black.png";
+
 // technology icon imports
 import HTML from "./assets/technologyIcons/HTML.png"
 import CSS from "./assets/technologyIcons/CSS.png"
+import ResponsiveDesign from "./assets/technologyIcons/ResponsiveDesign.png"
 import React from "./assets/technologyIcons/React.png"
 import Spring from "./assets/technologyIcons/SpringBoot.png"
 import PostgreSQL from "./assets/technologyIcons/PostgreSQL.png"
@@ -35,6 +38,28 @@ const projects = [
                   ],
     color: "purple",
   },
+  {
+    id: 2,
+    name: "Potluck Planner",
+    shortDescription:
+    'Group Project during my studies at Lambda School',
+    description:
+    <>
+    <p>Potluck Planner is a full stack web application which is used to plan potlucks or similar local events.</p>
+    <br></br>
+    <p>This was the first major project I worked on, and was only a few weeks after I began studying web development. It was also built with a small team of other students, which I feel I learned a lot from</p>
+    </>,
+    bannerImage: potluckPlannerPreview,
+    images: [potluckPlannerPreview],
+    siteLink: "https://condescending-snyder-2f6834.netlify.app/index.html",
+    githubRepo: "https://github.com/BW-Potluck-Planner-2020-08/Marketing",
+    roles: "Front-End, Designer",
+    technologies: [{"name": "HTML", "image": HTML}, 
+                   {"name": "CSS", "image": CSS},
+                   {"name": "Responsive Design", "image": ResponsiveDesign}
+                  ],
+    color: "rose",
+  }
   // {
   //   id: 2,
   //   name: "Irispro Script",
