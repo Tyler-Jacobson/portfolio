@@ -1,6 +1,6 @@
 import warframepdaPreview from "./assets/warframepda/3-devices-black.png";
-
 import potluckPlannerPreview from "./assets/potluck/3-devices-black.png";
+import pomodoroTimerPreview from "./assets/pomodoro-timer/3-devices-black.png";
 
 // technology icon imports
 import HTML from "./assets/technologyIcons/HTML.png"
@@ -59,6 +59,28 @@ const projects = [
                    {"name": "Responsive Design", "image": ResponsiveDesign}
                   ],
     color: "rose",
+  },
+  {
+    id: 3,
+    name: "Pomodoro Timer",
+    shortDescription:
+    'A timer designed to help users make use of the Pomodoro Technique',
+    description:
+    <>
+    <p>This app is a timer designed help users work with the time management method known as the Pomodoro Technique.</p>
+    <br></br>
+    <p>The Pomodoro Technique is a system that breaks work into intervals of 25 minutes, seperated by short breaks, which is known to drastically increase productivity in certain situations.</p>
+    </>,
+    bannerImage: pomodoroTimerPreview,
+    images: [pomodoroTimerPreview],
+    siteLink: "https://pomodoro-timer-deploy.netlify.app/",
+    githubRepo: "https://github.com/Tyler-Jacobson/pomodoro-timer",
+    roles: "Front-End, Designer",
+    technologies: [{"name": "HTML", "image": HTML}, 
+                   {"name": "CSS", "image": CSS},
+                   {"name": "React", "image": React}
+                  ],
+    color: "turquoise",
   }
   // {
   //   id: 2,
