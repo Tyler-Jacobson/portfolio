@@ -32,9 +32,9 @@ export default function Home() {
         </div>
 
         <div className="shortbio">
-          <p>I am a junior web developer with a passion for bringing my projects to life</p>
+          <p>I am a web developer with a passion for bringing my projects to life</p>
           <br></br>
-          <p>My greatest joys in life are: Coding, and spending time with friends. I'm a quick learner, and I try to lighten the mood no matter where I am.</p>
+          <p>My greatest joys in life are: Coding, gaming, and spending time with friends. I'm a quick learner, and I try to lighten the mood no matter where I am.</p>
         </div>
       </section>
       <div className="divborder"></div>

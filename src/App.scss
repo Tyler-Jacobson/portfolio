@@ -229,7 +229,7 @@ img{
 .imgcontainer{
   width: 60%;
   transition: transform .3s; /* Animation */
-
+  margin-bottom: 10px;
 //  box-shadow:2px 0px 0px 0px rgba(0, 0, 0, 0.3);
 }
 .imgcontainer:hover{
@@ -338,6 +338,10 @@ img{
   max-height: 40px;
 }
 
+.hometech-pointer {
+  margin: 2px;
+}
+
 .hometech-pointer-text {
   visibility: hidden;
   width: 120px;
@@ -413,6 +417,10 @@ img{
 .technology-icon {
   max-width: 40px;
   max-height: 40px;
+}
+
+.technology-pointer {
+  margin: 1px;
 }
 
 .technology-pointer-text {
